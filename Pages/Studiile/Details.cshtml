@@ -1,0 +1,37 @@
+﻿@page
+@model Proiect_Optional_Palamarciuc_Dina_ECTS.Pages.Studiile.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Studii</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Studii.Gimnaziale)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Studii.Gimnaziale)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Studii.Liceale)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Studii.Liceale)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Studii.Superioare)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Studii.Superioare)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Studii?.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
